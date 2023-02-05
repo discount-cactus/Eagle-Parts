@@ -219,7 +219,7 @@ Switches electronic signals</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2302">
+<deviceset name="2302" prefix="Q">
 <description>N-Channel MOSFET:
 Drain-to-Source Voltage: 20V
 Continuous Drain Current: 4.3A

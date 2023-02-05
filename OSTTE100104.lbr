@@ -105,7 +105,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OSTTE100104">
+<deviceset name="OSTTE100104" prefix="J">
 <gates>
 <gate name="G$1" symbol="OSTTE100104" x="0" y="-2.54"/>
 </gates>

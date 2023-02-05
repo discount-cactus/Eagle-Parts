@@ -73,76 +73,31 @@
 </layers>
 <library>
 <packages>
-<package name="LM324N">
-<wire x1="-3.8" y1="9.9" x2="-1" y2="9.9" width="0.127" layer="21"/>
-<wire x1="-1" y1="9.9" x2="1" y2="9.9" width="0.127" layer="21"/>
-<wire x1="1" y1="9.9" x2="3.8" y2="9.9" width="0.127" layer="21"/>
-<wire x1="3.8" y1="9.9" x2="3.8" y2="-9.9" width="0.127" layer="21"/>
-<wire x1="3.8" y1="-9.9" x2="-3.8" y2="-9.9" width="0.127" layer="21"/>
-<wire x1="-3.8" y1="-9.9" x2="-3.8" y2="9.9" width="0.127" layer="21"/>
-<pad name="OUT1" x="-3.8" y="7.8" drill="0.6" shape="octagon"/>
-<pad name="IN1-" x="-3.8" y="5.3" drill="0.6" shape="octagon"/>
-<pad name="IN1+" x="-3.8" y="2.8" drill="0.6" shape="octagon"/>
-<pad name="VCC" x="-3.8" y="0.3" drill="0.6" shape="octagon"/>
-<pad name="IN2+" x="-3.8" y="-2.2" drill="0.6" shape="octagon"/>
-<pad name="IN2-" x="-3.8" y="-4.7" drill="0.6" shape="octagon"/>
-<pad name="OUT2" x="-3.8" y="-7.2" drill="0.6" shape="octagon"/>
-<pad name="OUT3" x="3.8" y="-7.2" drill="0.6" shape="octagon"/>
-<pad name="IN3-" x="3.8" y="-4.7" drill="0.6" shape="octagon"/>
-<pad name="IN3+" x="3.8" y="-2.2" drill="0.6" shape="octagon"/>
-<pad name="GND" x="3.8" y="0.3" drill="0.6" shape="octagon"/>
-<pad name="IN4+" x="3.8" y="2.8" drill="0.6" shape="octagon"/>
-<pad name="IN4-" x="3.8" y="5.3" drill="0.6" shape="octagon"/>
-<pad name="OUT4" x="3.8" y="7.8" drill="0.6" shape="octagon"/>
-<text x="-2.1" y="1.5" size="0.762" layer="21">LM324N</text>
-<wire x1="1" y1="9.9" x2="-1" y2="9.9" width="0.127" layer="21" curve="-180"/>
+<package name="OSTTE020104">
+<pad name="1" x="0" y="0" drill="0.95" shape="octagon"/>
+<pad name="2" x="3.5" y="0" drill="0.95" shape="octagon"/>
 </package>
 </packages>
 <symbols>
-<symbol name="LM324N">
-<wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
-<wire x1="25.4" y1="0" x2="25.4" y2="20.32" width="0.254" layer="94"/>
-<wire x1="25.4" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
-<wire x1="0" y1="20.32" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="OUT1" x="-5.08" y="17.78" length="middle"/>
-<pin name="IN1-" x="-5.08" y="15.24" length="middle"/>
-<pin name="IN1+" x="-5.08" y="12.7" length="middle"/>
-<pin name="VCC" x="-5.08" y="10.16" length="middle"/>
-<pin name="IN2+" x="-5.08" y="7.62" length="middle"/>
-<pin name="IN2-" x="-5.08" y="5.08" length="middle"/>
-<pin name="OUT2" x="-5.08" y="2.54" length="middle"/>
-<pin name="OUT4" x="30.48" y="17.78" length="middle" rot="R180"/>
-<pin name="IN4-\" x="30.48" y="15.24" length="middle" rot="R180"/>
-<pin name="IN4+" x="30.48" y="12.7" length="middle" rot="R180"/>
-<pin name="GND" x="30.48" y="10.16" length="middle" rot="R180"/>
-<pin name="IN3+" x="30.48" y="7.62" length="middle" rot="R180"/>
-<pin name="IN3-" x="30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="OUT3" x="30.48" y="2.54" length="middle" rot="R180"/>
-<text x="7.62" y="10.16" size="2.286" layer="94">LM324</text>
+<symbol name="OSTTE020104">
+<pin name="1" x="7.62" y="2.54" length="middle" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" length="middle" rot="R180"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM324N" prefix="U">
+<deviceset name="OSTTE020104">
 <gates>
-<gate name="G$1" symbol="LM324N" x="-12.7" y="-2.54"/>
+<gate name="G$1" symbol="OSTTE020104" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LM324N">
+<device name="" package="OSTTE020104">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN1+" pad="IN1+"/>
-<connect gate="G$1" pin="IN1-" pad="IN1-"/>
-<connect gate="G$1" pin="IN2+" pad="IN2+"/>
-<connect gate="G$1" pin="IN2-" pad="IN2-"/>
-<connect gate="G$1" pin="IN3+" pad="IN3+"/>
-<connect gate="G$1" pin="IN3-" pad="IN3-"/>
-<connect gate="G$1" pin="IN4+" pad="IN4+"/>
-<connect gate="G$1" pin="IN4-\" pad="IN4-"/>
-<connect gate="G$1" pin="OUT1" pad="OUT1"/>
-<connect gate="G$1" pin="OUT2" pad="OUT2"/>
-<connect gate="G$1" pin="OUT3" pad="OUT3"/>
-<connect gate="G$1" pin="OUT4" pad="OUT4"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
